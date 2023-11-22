@@ -1,0 +1,23 @@
+:root{
+    --cyan  :hsl(179, 62%, 43%);
+    --yellow:hsl(71, 73%, 54%);
+    --gray  :hsl(204, 43%, 93%);
+    --blue  :hsl(218, 22%, 67%);
+}
+/* 400 700 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card div{
+    background-color: rebeccapurple;
+}
+.card div:nth-child(1){
+    grid-column: 1 / span 3;
+}
