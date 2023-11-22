@@ -9,15 +9,69 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    background-color: var(--gray);
     font-family: 'Karla', sans-serif;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .card{
     display: grid;
+    width: 600px;
+    height: 450px;
     grid-template-columns: 1fr 1fr;
 }
-.card div{
-    background-color: rebeccapurple;
-}
-.card div:nth-child(1){
+.card .join{
+    border-radius: 20px 20px 0 0;
+    padding: 35px 35px 0px 35px;
     grid-column: 1 / span 3;
+    background-color: white;
+}
+.card .buy{
+    border-radius: 0 0 0 20px;
+    padding: 35px 35px 0px 35px;
+    background-color: var(--cyan);
+}
+.card .about{
+    border-radius: 0 0 20px 0;
+    padding: 35px 35px 0px 35px;
+    background-color: hsl(179, 62%, 50%);
+}
+.card .join h1{
+    color: var(--cyan);
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+.card .join h4{
+   color: var(--yellow);
+   padding-bottom: 12px;
+}
+.card .join p{
+    color: var(--blue);
+    line-height: 1.4;
+}
+.card .buy h2{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.card .buy .price{
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+    font-weight: 400;
+}
+.card .buy .price span{
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+.buy p{
+    color: white;
 }
