@@ -22,24 +22,25 @@ body{
 }
 .card{
     display: grid;
-    width: 600px;
+    width: 620px;
     height: 450px;
     grid-template-columns: 1fr 1fr;
+    margin: 3rem;
 }
 .card .join{
-    border-radius: 20px 20px 0 0;
-    padding: 35px 35px 0px 35px;
+    border-radius: 15px 15px 0 0;
+    padding: 35px 35px 15px 35px;
     grid-column: 1 / span 3;
     background-color: white;
 }
 .card .buy{
-    border-radius: 0 0 0 20px;
-    padding: 35px 35px 0px 35px;
+    border-radius: 0 0 0 15px;
+    padding: 35px 35px 15px 35px;
     background-color: var(--cyan);
 }
 .card .about{
-    border-radius: 0 0 20px 0;
-    padding: 35px 35px 0px 35px;
+    border-radius: 0 0 15px 0;
+    padding: 35px 35px 15px 35px;
     background-color: hsl(179, 62%, 50%);
 }
 .card .join h1{
@@ -55,7 +56,7 @@ body{
     color: var(--blue);
     line-height: 1.4;
 }
-.card .buy h2{
+h2{
     color: white;
     font-size: 20px;
     padding-bottom: 15px;
@@ -65,6 +66,7 @@ body{
     align-items: center;
     color: var(--gray);
     font-weight: 400;
+    margin-bottom: 10px;
 }
 .card .buy .price span{
     color: white;
@@ -74,4 +76,30 @@ body{
 }
 .buy p{
     color: white;
+}
+.buy a{
+    display: block;
+    text-align: center;
+    background-color: var(--yellow);
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 14px 0;
+    border-radius: 7px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+.about ul{
+    list-style: none;;
+}
+.about ul li{
+    color: white;
+    padding-bottom: 3.45px;
+    font-size: 14px;
+}
+
+@media (max-width:"510px"){
+    .card{
+        grid-template-columns: none;
+    }
 }
