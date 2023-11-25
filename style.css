@@ -98,8 +98,33 @@ h2{
     font-size: 14px;
 }
 
-@media (max-width:"510px"){
+@media (max-width: 510px){
+    .container{
+        align-items: initial;
+        margin-bottom: 20px;
+    }
     .card{
         grid-template-columns: none;
+        margin: 4rem 3rem;
+    }
+    .card .join{
+        padding-bottom: 30px;
+        grid-column: initial;
+        border-radius: 15px 15px 0 0;
+    }
+    .card .join h1{
+        font-size: 22px;
+    }
+    .card .join p{
+        font-size: 13.5px;
+        line-height: 1.9;
+    }
+    .card .buy{
+        padding: 30px;
+        border-radius: initial;
+    }
+    .card .about{
+        padding: 30px;
+        border-radius: 0 0 15px 15px;
     }
 }
